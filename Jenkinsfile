@@ -13,7 +13,7 @@ pipeline {
 		}
         }
 
-        stage (build and run){
+        stage ('build and run'){
             steps{
                  script{
                     sh"php artisan serve"
