@@ -13,7 +13,7 @@ pipeline {
 		}
         }
 
-        stage ('build and run'){
+        stage ('Deploying into apache') {
             steps{
                  script{
                     sh"sudo rm -rf /var/www/laravel_game_crude/"
@@ -25,7 +25,7 @@ pipeline {
 
         }
 
-        stage ('Test API'){
+        stage ('Test Game Crud API'){
             steps{
                  script{
                     sh"sudo postman collection run /home/devlocal/AE.json"
