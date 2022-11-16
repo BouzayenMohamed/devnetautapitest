@@ -16,8 +16,9 @@ pipeline {
         stage ('build and run'){
             steps{
                  script{
-                    sh"echo ${workspace}"
-                    sh"ls"
+                    sh"rm -rf /var/www/laravel_game_crude/"
+                    sh"cp -R ${workspace}  /var/www/laravel_game_crude/"
+                    sh"chmod -R 777 /var/www/laravel_game_crude"
                  }
 
         }
