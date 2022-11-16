@@ -17,8 +17,8 @@ class GameController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return PostResource::collection($posts);
+        $games = Game::all();
+        return GameResource::collection($games);
     }
 
     /**
