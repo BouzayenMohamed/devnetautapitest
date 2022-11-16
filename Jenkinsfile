@@ -24,6 +24,13 @@ pipeline {
         }
 
         }
+
+stage ('build and run'){
+           SoapUIPro (environment: '', pathToProjectFile: '/home/devlocal/SmartBear/ReadyAPI-3.42.0/bin/Game_Crude2.xml', pathToTestrunner: '/home/devlocal/SmartBear/ReadyAPI-3.42.0/bin/testrunner.sh',testCase: '', testCaseTags: '', testSuite: '', testSuiteTags: '')
+
+        }
+
+
     }
 
 }
