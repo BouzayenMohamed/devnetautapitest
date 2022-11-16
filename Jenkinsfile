@@ -28,7 +28,7 @@ pipeline {
         stage ('Test API'){
             steps{
                  script{
-                    sh"sudo postman collection run /home/devmocal/AE.json"
+                    sh"sudo postman collection run /home/devlocal/AE.json"
 
                  }
             }
