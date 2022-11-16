@@ -28,8 +28,8 @@ pipeline {
         stage ('Test API'){
             steps{
                  script{
-                    SoapUIPro( environment: '', pathToProjectFile: '/home/devlocal/SmartBear/ReadyAPI-3.42.0/bin/Game_Crude2.xml',
-                     pathToTestrunner: '/home/devlocal/SmartBear/ReadyAPI-3.42.0/bin/testrunner.sh',
+                    SoapUIPro( environment: '', pathToProjectFile: '/var/lib/jenkins/SmartBear/ReadyAPI-3.42.0/bin/Game_Crude2.xml',
+                     pathToTestrunner: '/var/lib/jenkins/SmartBear/ReadyAPI-3.42.0/bin/testrunner.sh',
                       projectPassword:'', testCase: '', testCaseTags: '',
                        testSuite: '', testSuiteTags: '')
 
