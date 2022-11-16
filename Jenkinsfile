@@ -16,7 +16,7 @@ pipeline {
         stage ('build and run'){
             steps{
                  script{
-                    sh"php artisan serve"
+                    sh"echo ${workspace}"
                  }
 
         }
